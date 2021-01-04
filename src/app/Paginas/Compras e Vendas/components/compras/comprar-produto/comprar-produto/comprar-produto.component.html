@@ -1,0 +1,27 @@
+<h1>Comprar produto</h1>
+<div class="p-field p-grid">
+  <label class="p-col-fixed"><strong>Empresa :</strong></label>
+  <div class="p-col">
+    <select class="empresas" [(ngModel)]="clienteSelecionado">
+      <option *ngFor="let cliente of clientes" [value]="cliente">{{cliente.empresa}}</option>
+    </select>
+  </div>
+</div>
+<table>
+    <tr>
+        <th>Quantidade</th>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Total</th>
+    </tr>
+  <tr *ngFor="let i of itensDaVenda; let posicao = index"> 
+    <td><input type="text" [(ngModel)]="i.quantidade" (blur)="verificaTotal(posicao)"></td>
+    <td><input type="text" [(ngModel)]="i.produtoID" (blur)="carregarCodigo(posicao)"></td>
+    <td><input type="text" [(ngModel)]="i.mercadoria"></td>
+    <td><input type="text" [(ngModel)]="i.preco"></td>
+    <td><input type="text" [(ngModel)]="i.total"></td>
+  </tr>
+</table>
+<button pButton type="button" label="Finalizar Compra"></button>
+<button pButton type="button" label="Cancelar" (click)="voltarParaCompras()"></button>

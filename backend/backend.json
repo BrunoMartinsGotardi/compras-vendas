@@ -1,0 +1,68 @@
+{
+  "clientes": [
+    {
+      "id": "2",
+      "nome": "Jorge Alcantara",
+      "empresa": "JAlimpeza",
+      "cpf": "56321455896"
+    },
+    {
+      "id": "3",
+      "nome": "Emerson Machado",
+      "empresa": "Metal Forte",
+      "cpf": "45876325412"
+    },
+    {
+      "id": "4",
+      "nome": "Samuel Pereira",
+      "empresa": "Mix Tudo",
+      "cpf": "12542366895"
+    },
+    {
+      "id": "6",
+      "nome": "Everton da silva gotardi",
+      "empresa": "rd transporte",
+      "cpf": "05953240880"
+    },
+    {
+      "id": "8",
+      "nome": "Torinha da Silva Sauro",
+      "empresa": "Torinas Marketing",
+      "cpf": "49309495804"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "caneta",
+      "preco": "5,50",
+      "estoque": "250"
+    },
+    {
+      "id": "2",
+      "nome": "Lapis",
+      "preco": "3,50",
+      "estoque": "475"
+    },
+    {
+      "id": "3",
+      "nome": "Borracha",
+      "preco": "1,50",
+      "estoque": "670"
+    },
+    {
+      "id": "4",
+      "nome": "Apontador",
+      "preco": "3,50",
+      "estoque": "234"
+    },
+    {
+      "quantidade": "",
+      "id": "5",
+      "nome": "Caderno",
+      "preco": "30,25",
+      "estoque": "230",
+      "total": ""
+    }
+  ]
+}

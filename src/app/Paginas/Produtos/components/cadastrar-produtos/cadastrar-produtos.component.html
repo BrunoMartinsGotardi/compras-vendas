@@ -1,0 +1,27 @@
+<h1>Cadastro de Produtos</h1>
+<div class="p-field p-grid">
+    <label class="p-col-fixed"><strong>ID :</strong></label>
+    <div class="p-col">
+        <input type="text" pInputText [(ngModel)]="produtos.id"> 
+    </div>
+</div>
+<div class="p-field p-grid">
+    <label class="p-col-fixed"><strong>Nome :</strong></label>
+    <div class="p-col">
+        <input type="text" pInputText [(ngModel)]="produtos.nome"> 
+    </div>
+</div>
+<div class="p-field p-grid">
+    <label class="p-col-fixed"><strong>Preço :</strong></label>
+    <div class="p-col">
+        <input type="text" pInputText [(ngModel)]="produtos.preco"> 
+    </div>
+</div>
+<div class="p-field p-grid">
+    <label class="p-col-fixed"><strong>Estoque :</strong></label>
+    <div class="p-col">
+        <input type="text" pInputText [(ngModel)]="produtos.estoque"> 
+    </div>
+</div>
+<button pButton type="button" label="Cadastrar" (click)="cadastrar()"></button>
+<button pButton type="button" label="Cancelar" (click)="voltarParaProdutos()"></button>

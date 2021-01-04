@@ -1,0 +1,28 @@
+<h1>Edição de clientes</h1>
+
+<div class="p-field p-grid">
+    <label class="p-col-fixed"><strong>ID :</strong></label>
+    <div class="p-col">
+        <input type="text" pInputText [(ngModel)]="clientes.id"> 
+    </div>
+</div>
+<div class="p-field p-grid">
+    <label class="p-col-fixed"><strong>Nome :</strong></label>
+    <div class="p-col">
+        <input type="text" pInputText [(ngModel)]="clientes.nome"> 
+    </div>
+</div>
+<div class="p-field p-grid">
+    <label class="p-col-fixed"><strong>Empresa :</strong></label>
+    <div class="p-col">
+        <input type="text" pInputText [(ngModel)]="clientes.empresa"> 
+    </div>
+</div>
+<div class="p-field p-grid">
+    <label class="p-col-fixed"><strong>CPF :</strong></label>
+    <div class="p-col">
+        <input type="text" pInputText [(ngModel)]="clientes.cpf"> 
+    </div>
+</div>
+<button pButton type="button" label="Confirmar" (click)="atualizar()"></button>
+<button pButton type="button" label="Cancelar" (click)="voltarTela()"></button>
